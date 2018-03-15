@@ -1,11 +1,8 @@
 function findWaldo(arr, found) {
-  foreach(arr, found);
-}
 
-function foreach(list, callback) {
-  list.forEach(function(element){
+  arr.forEach(function(element){
     if(element === "Waldo") {
-      callback(element, list.indexOf(element));
+      found(element, arr.indexOf(element));
     }
   });
 }
